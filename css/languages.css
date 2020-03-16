@@ -1,0 +1,27 @@
+#proficiency{
+  color: #CBA74A;
+  margin-left: 2em;
+  width: auto;
+  opacity: .7;
+}
+
+#proficiency span, #languages span{
+  color: #FFFFFF;
+  opacity: .7;
+}
+
+#languages{
+  margin-left: 3em;
+  color: #EA4558;
+  opacity: .7;
+}
+
+#blurb, #reasons{
+  padding-left: .5em;
+  color: #FFFFFF;
+  opacity: .7;
+}
+
+#reasons{
+  padding-left: 2em;
+}

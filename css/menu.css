@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+
+
+/* Toggle Menu Bar
+=================== */
+
+#menubar {
+  position: absolute;
+  width: 16em;
+  height: 100vh;
+  background: #000000;
+  opacity: .9;
+  left: -16em;
+  transition: .4s;
+  z-index: 2;
+}
+
+#menubar.active{
+  left:0;
+}
+
+#menubar ul{
+  margin-top: 1em;
+  margin-left: .5em;
+  width: 8em;
+}
+
+#menubar ul li{
+  list-style: none;
+  margin: 1.25em 0em 1.5em 0em;
+  padding: 1em .5em;
+}
+
+a:link, a:hover, a:visited, a:focus{
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: .8rem;
+    z-index: -1;
+}
+
+#menubar img{
+  position: absolute;
+  width: 3rem;
+  height: auto;
+  margin-top: .75em;
+  margin-left: 16.75em;
+}
+
+@media (min-width: 60rem) {
+	#menubar img {
+		height: 4rem;
+		width: auto;
+	}
+  a:link, a:hover, a:visited, a:focus{
+    font-size: 1.07rem;
+  }
+}

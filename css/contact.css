@@ -1,0 +1,18 @@
+#contactInfo{
+  color: #CBA74A;
+  margin-left: 2em;
+  width: auto;
+  opacity: .7;
+}
+
+#contactInfo span, #type span{
+  color: #FFFFFF;
+  opacity: .7;
+}
+
+
+#blurb{
+
+  color: #FFFFFF;
+  opacity: .7;
+}

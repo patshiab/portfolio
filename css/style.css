@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather+Sans:400,800|Montserrat:400,900');
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+body {
+	margin: 0;
+  padding: 0;
+  height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+	left: 0em;
+  float:left;
+  margin-top: -.1rem;
+	margin-left: 2.75rem;
+  padding: 1em;
+}
+
+
+/* top section
+=================== */
+
+.top {
+  margin: 0;
+	padding: 0;
+	color: #FFF;
+  height: 100vh;
+  background-color: #7C7A99;
+  box-shadow: 0 0 10em 0 rgba(0,0,0,.3);
+}
+
+#circle-home {
+  position: absolute;
+  background-color: #FFF;
+  width: 18em;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+}
+
+
+h1{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3rem;
+  padding-top: 2.5em;
+  position: absolute;
+  left: 5%;
+  bottom: 30%;
+}
+
+.txt-type {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  position: absolute;
+  left: 30%;
+  bottom: 24%;
+  padding-right: .15em;
+  border-right: .1rem solid white;
+  animation: blinkTextCursor 600ms steps(50) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #FFF;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+@media (min-width: 40rem) {
+  .top{
+    box-shadow: 1em 0 10em 2em rgba(0,0,0,.3);
+  }
+	header {
+		font-size: 2rem;
+    margin-top:-.5rem;
+    margin-left: 1.75em;
+	}
+  h1 {
+    text-align: left;
+    font-size: 4.5rem;
+    bottom: 53%;
+  }
+  #circle-home {
+    width: 0;
+    border:none;
+  }
+  .txt-type {
+    font-size: 3.5rem;
+    left: 15%;
+    bottom: 45%;
+  }
+
+  .home-pic {
+    position: absolute;
+    background-image: url(../img/stairs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    height: 100vh;
+    right:0;
+    top:0;
+  }
+}
+
+
+/* bottom section
+=================== */
+
+.bottom{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: Black;
+}
+
+.about {
+  position: absolute;
+  background-color: #FFF;
+  width: 70%;
+  height:70%;
+  border: 10px solid black;
+  text-align: center;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%,-50%);
+  padding: 1.75em;
+  box-shadow: 0 0 3em 0 rgba(0,0,0,.3);
+  overflow: visible;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.background {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 55%;
+  top: 153%;
+  transform: translate(-50%,-50%);
+  background-color: #7C7A99;
+
+}
+
+.about h2 {
+  font-size: 1.5rem;
+}
+
+.about p {
+  font-size:.75rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top:1rem;
+}
+
+
+.about h3{
+  margin: 1.25rem 0;
+}
+
+@media (min-width: 40rem) {
+	.bottom{
+    background-image: url(../img/lights.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 15rem;
+    height: 100vh;
+    margin: 0 10%;
+  }
+  .about{
+    margin:0;
+    transform: none;
+    width: 55%;
+    height: 80%; /* 47*/
+    left:42%;
+    top: 110%;
+    padding: 2.75em;
+    border: none;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    z-index: -1;
+    overflow: auto;
+}
+  .background{
+    margin:0;
+    width: 0;
+    height: 80%;
+    left:66%;
+    bottom: -98%;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+    padding-bottom: .2em;
+    padding-top:1em;
+    text-align: left;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-top:1rem;
+  }
+
+  .bold {
+    font-size: 1rem;
+  }
+
+  .about h3{
+    margin: 1.25rem 0;
+    padding: 2em;
+  }
+}
+
+@media (min-width: 50rem) {
+	.bottom{
+    background-size: 40%;
+  }
+}

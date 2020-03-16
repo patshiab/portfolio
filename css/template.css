@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Montserrat');
+
+html{
+  scroll-behavior: smooth;
+    background-color: #282b36;
+}
+
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+body {
+	margin: 0;
+  padding: 0;
+  height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+  position:absolute;
+  width: 100vw;
+  height: 4.5rem;
+  background-color: #7C7A99;
+}
+
+.name {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+	left: 0em;
+  float:left;
+  margin-top: -.1rem;
+	margin-left: 2.75rem;
+  padding: 1em;
+}
+
+/*
+.background{
+  background-color: #282b36;
+  width: 100vw;
+  height: 100vh;
+}
+*/
+
+.background ul li{
+  width: 25%;
+  height: 2em;
+  list-style: none;
+  display: block;
+  float: left;
+  text-align: center;
+  padding-top: .5em;
+  margin-top:4.5rem;
+  background-color: #1e2129;
+  border: .01em solid #000000;
+}
+
+.background ol li{
+  margin: 0;
+  padding: 0;
+  float:left
+}
+
+a {
+  padding: .2rem;
+}
+
+a:link, a:hover, a:visited, a:focus{
+  text-decoration: none;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight:bold;
+  color: #d9d9d9;
+}
+
+@media (min-width: 30rem) {
+  a{
+    padding: .2rem 30%;
+  }
+  #smallbtn{
+    padding: .2rem 40%;
+  }
+}
+
+.text{
+  position: absolute;
+  margin-top: 7rem;
+  display: block;
+  text-align: left;
+  height: auto;
+  width: auto;
+}
+
+.text ul li{
+  margin-bottom: .75rem;
+  font-size: .75em;
+  list-style: none;
+}
+
+
+#line-numbers ul li{
+  padding-left: .5em;
+  color: #FFFFFF;
+  opacity: .3;
+}
